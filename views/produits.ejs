@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des produits</title>
+</head>
+<body>
+    <h1>Liste des produits</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% produits.forEach(function(produit) { %>
+                <tr>
+                    <td><%= produit.libelle %></td>
+                    <td><%= produit.price %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <a href="/">Ajouter un autre produit</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Product</title>
+</head>
+<body>
+    <div class="border border-gray-300 shadow-sm rounded-lg overflow-hidden max-w-sm mx-auto mt-16">
+        <table class="w-full text-sm leading-5">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="py-3 px-4 text-left font-medium text-gray-600">Libelle</th>
+              <th class="py-3 px-4 text-left font-medium text-gray-600">Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% produits.forEach(function(produit) { %>
+            <tr>
+              <td class="py-3 px-4 text-left font-medium text-gray-600"><%= produit.libelle %></td>
+              <td class="py-3 px-4 text-left"><%= produit.price %></td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+      <a href="/" class="mt-4 text-center block text-blue-500">Ajouter un autre produit</a>
+</body>
+</html>

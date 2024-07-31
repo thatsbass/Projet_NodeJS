@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-1 flex-col  justify-center space-y-5 max-w-md mx-auto mt-24">
+        <div class="flex flex-col space-y-2 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Breukh</h2>
+            <p class="text-md md:text-xl">
+                Enter your name.
+            </p>
+        </div>
+        <form method="post" action="/produit" class="flex flex-col max-w-md space-y-5">
+            <input type="text" name="libelle" id="libelle" placeholder="Libelle"
+                  class="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal" />
+            <input type="number" name="price" id="price" placeholder="Price"
+                  class="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal" />
+            <button type="submit" class="flex items-center justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white">
+                Add
+            </button>
+        </form>
+    </div>
+</body>
+</html>

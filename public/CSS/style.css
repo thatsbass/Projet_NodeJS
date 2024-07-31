@@ -1,0 +1,10 @@
+body {
+    background-image: -webkit-linear-gradient(45deg, #9c16da 50%, #1e40af 50%)
+    ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background: linear-gradient(45deg, #1e3a8a, #1eaf3d, #1e3a8a); */
+    color: #e5e7eb; 
+}
+
